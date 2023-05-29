@@ -1,9 +1,5 @@
 import './style.css';
+import { loadpage } from "./loadpage"
 
-let header = document.createElement("div");
-let h1 = document.createElement("h1");
-h1.textContent = "Luigi's Arrosticini";
+loadpage()
 
-header.appendChild(h1);
-
-document.getElementById("content").appendChild(header);

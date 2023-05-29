@@ -4,8 +4,16 @@
     justify-content: center;
 }
 
-#content div {
+#header {
     display: flex;
     width: 100%;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+
+#tabholder {
+    display: flex;
     justify-content: center;
+
 }
