@@ -1,13 +1,15 @@
 body {
     height: 100vh;
+    margin: 0px;
+    background-image: url('./embers.jpg');
+    background-size: contain;
 }
 
 #content {
     display: flex;
     width: 100%;
     height: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #header {
@@ -16,6 +18,8 @@ body {
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.750);
+    color: white;
 }
 
 #tabholder {
@@ -26,8 +30,7 @@ body {
 
 #bodyDiv {
     display: flex;
-    width: 100%;
-    height: 100%;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
@@ -37,12 +40,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    width: 70vh;
+    background-color: rgba(0, 0, 0, 0.750);
+    color: white;
 }
 
 #mainElementHolder img {
     object-fit: cover;
-    height: 50vh;
     width: 50vh;
+    height: 50vh;
     border-radius: 50%;
 }
