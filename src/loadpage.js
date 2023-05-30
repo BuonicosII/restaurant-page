@@ -1,4 +1,7 @@
+import arrosticini from "./arrosticini.jpg"
+
 function loadpage() {
+  //create dom elements of the header
   let header = document.createElement("div");
   header.setAttribute("id", "header");
   let h1 = document.createElement("h1");
@@ -13,13 +16,24 @@ function loadpage() {
   menu.textContent = "Menu";
   let contacts = document.createElement("div");
   contacts.textContent = "Contacts";
+  //create dom elements of the body
+  let bodyDiv = document.createElement("div");
+  bodyDiv.setAttribute("id", "bodyDiv");
+  let mainElementHolder = document.createElement("div");
+  mainElementHolder.setAttribute("id", "mainElementHolder");
+  let arrosticiniImage = new Image();
+  arrosticiniImage.src = arrosticini;
+  
   header.appendChild(h1);
   header.appendChild(pOne);
   header.appendChild(tabHolder);
   tabHolder.appendChild(homeTab);
   tabHolder.appendChild(menu);
   tabHolder.appendChild(contacts);
+  mainElementHolder.appendChild(arrosticiniImage);
+  bodyDiv.appendChild(mainElementHolder);
   document.getElementById("content").appendChild(header);
+  document.getElementById("content").appendChild(bodyDiv);
 }
 
 export {loadpage}
