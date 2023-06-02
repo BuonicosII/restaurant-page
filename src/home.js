@@ -13,11 +13,11 @@ function home () {
     h2.textContent = "Enjoy a taste of Abruzzo"
     let arrosticiniImage = new Image();
     arrosticiniImage.src = arrosticini;
-    let h3 = document.createElement("h3");
-    h3.textContent = "Come visit us for a bite of italian wilderness";
+    let p3 = document.createElement("p");
+    p3.textContent = "Come visit us for a bite of italian wilderness";
     mainElementHolder.appendChild(h2);
     mainElementHolder.appendChild(arrosticiniImage);
-    mainElementHolder.appendChild(h3);
+    mainElementHolder.appendChild(p3);
     bodyDiv.appendChild(mainElementHolder);
 }
 
