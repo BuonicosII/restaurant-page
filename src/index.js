@@ -1,5 +1,13 @@
 import './style.css';
-import { loadpage } from "./loadpage"
+import { header } from "./loadpage";
+import { home } from "./home";
+import { menu } from "./menu";
+import { contacts } from "./contacts";
 
-loadpage()
+header()
+document.getElementById("home").addEventListener("click", home);
+document.getElementById("menu").addEventListener("click", menu);
+document.getElementById("contacts").addEventListener("click", contacts);
+
+home()
 
