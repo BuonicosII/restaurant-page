@@ -83,7 +83,31 @@ h2 {
 #menuDiv {
     width: 70vh;
     height: 70vh;
-    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.750);
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.dish {
+    display: flex;
+}
+
+.dish div {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 2vh;
+}
+
+.dish img {
+    object-fit: cover;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    margin: 2vh;
 }
 
 #contactsDiv {
