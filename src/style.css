@@ -114,9 +114,28 @@ h2 {
 }
 
 #contactsDiv {
-    width: 70vh;
-    height: 70vh;
-    background-color: rgb(255, 0, 0);
+    width: 100vh;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.750);
+    display: flex;
+    padding: 4vh;
+    gap: 4vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contactsDiv div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 40vh;
+    height: 30vh;
+    border: 0px;
 }
 
 #tabholder div {
